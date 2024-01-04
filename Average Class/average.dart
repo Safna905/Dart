@@ -7,6 +7,8 @@ class Average {
   }
 }
  void main() {
+
+  Average averageCalculator = Average();
    
     stdout.write("Enter the first number: ");
     double num1 = double.parse(stdin.readLineSync()!);
@@ -17,5 +19,5 @@ class Average {
     stdout.write("Enter the third number: ");
     double num3 = double.parse(stdin.readLineSync()!);
 
-    Average.calculateAvg(num1,num2,num3);
+    averageCalculator.calculateAvg(num1,num2,num3);
  }
